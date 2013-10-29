@@ -2,26 +2,76 @@
 * {margin:0;padding:0;}
 html,body{height:100%;
 		width:100%;}
-header{position: fixed;
+header{
+	background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	position: fixed;
 	  width:100%;
 	  z-index:20;
-	  height:120px;
+	  height:80px;
 	  background-color:red;
 	  top:0;
 	  left:0;}
+header h1{margin-left:300px;
+		float:left;
+		font-family: 'Trebuchet MS';
+		font-size: 4em;
+		color:white;
+		text-shadow: 0 0  5px black; 
+		}
+header h2{left:-250px;
+		position:relative;
+		top:55px}
 aside{position:fixed;
 	width:300px;
 	height:100%;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	padding-top:120px;
-	background-color:blue;
+	padding-top:80px;
+	background-color:#7db9e8;
 	z-index:10;
 	left:0;
 	top:0;
 		}
+aside >div{margin: 15px;
+		border-radius:5px;
+		background-color:white;
+		padding:5px;
+		margin-bottom: 40px}
+aside >div h3{margin-top:-23px;
+		  /*text-shadow: 0 0 3px white;*/
+		  font-family: 'Trebuchet MS';
+		  }
+aside >div ul{list-style-type:none;}
+aside >div ul li{padding:5px;
+			font-variant:small-caps;
+			font-weight:bold;
+			margin:5px 0;
+			background-color:#93BCFF;}
+aside >div ul li:hover{background-color:#7db9e8;
+				 cursor:pointer;
+				 
+				}
+aside >div ul li >span{width:49%;
+				background-color:#93BCFF;
+				display:inline-block;
+				margin-right:2%;
+				height:100%;
+				padding:5px;
+				-moz-box-sizing:border-box;
+				text-align:center;
+				}
+aside >div ul li:first-of-type{background-color:transparent}
+aside >div ul li >span:hover{background-color:#7db9e8;}
+aside >div ul li >span:last-of-type{width:49%;margin-right:0%;}
 article{height:100%;
-	padding-top: 120px;
+	padding-top: 80px;
 	margin-left:300px;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;

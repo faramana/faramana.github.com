@@ -7,21 +7,42 @@
 		 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+     	 <script>
+		$(function() {
+		$( "#datepicker" ).datepicker();
+		});
+		</script>
 	</head>
 	<body>
 		<header>
-		<h1>farnosť Maňa</h1>
+		<h1>Farnosť Maňa</h1>
 		<h2>Rímskokatolícka Cirkev</h2>
 		</header>
 		<article>
-			<iframe src='http://docs.google.com/viewer?url=http%3A%2F%2Fresearch.google.com%2Farchive%2Fbigtable-osdi06.pdf&embedded=true'></iframe>
+			<!--<iframe src='http://docs.google.com/viewer?url=http%3A%2F%2Fresearch.google.com%2Farchive%2Fbigtable-osdi06.pdf&embedded=true'></iframe>-->
 		</article>
 		<aside>
-		aktuálne zobrazené<br />
-		aktualne<br />
-		minuly tyzden<br />
-		dozadu<br />
-		dopredu<br />
+		<div>
+			<h3>Farské oznamy</h3>
+			<ul>
+				<li>20.10.2013 - 30.10.2013</li>
+				<li>Buduci tyzden</li>
+				<li>Aktuálny týždeň</li>
+				<li>minuly tyzden</li>
+				<li><div id="datepicker"></div></li>
+				<li style='background-color:transparent;padding:0'><span id='back'>dozadu</span><span id='go'>dopredu</span></li>
+				
+			</ul>
+		</div>
+		<div>
+			<h3>Rozpis spovedí</h3>
+			<ul>
+				<li>Marec 2013</li>
+				<li>Aktuálny mesiac</li>
+				<li style='background-color:transparent;padding:0'><span id='back'>dozadu</span><span id='go'>dopredu</span></li>
+				
+			</ul>
+		</div>
 		</aside>
 	
 	</body>
