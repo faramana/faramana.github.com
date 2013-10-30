@@ -56,7 +56,7 @@ aside >div ul li{padding:5px;
 			background-color:#93BCFF;}
 aside >div ul li:hover{background-color:#7db9e8;
 				 cursor:pointer;
-				 transform:scale(1,1.2);
+				 
 				 
 				}
 aside >div ul li >span{width:49%;
@@ -84,3 +84,4 @@ article iframe{
 			height:100%;
 			border: blue 0 solid;
 			background-color:yellow;}
+#datepicker{font-size:0.65em;}
