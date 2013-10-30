@@ -29,7 +29,7 @@ header h2{left:-250px;
 		position:relative;
 		top:55px}
 aside{position:fixed;
-	width:300px;
+	width:250px;
 	height:100%;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
@@ -56,6 +56,7 @@ aside >div ul li{padding:5px;
 			background-color:#93BCFF;}
 aside >div ul li:hover{background-color:#7db9e8;
 				 cursor:pointer;
+				 transform:scale(1,1.2);
 				 
 				}
 aside >div ul li >span{width:49%;
@@ -67,12 +68,13 @@ aside >div ul li >span{width:49%;
 				-moz-box-sizing:border-box;
 				text-align:center;
 				}
-aside >div ul li:first-of-type{background-color:transparent}
+aside >div ul li:first-of-type{background-color:transparent;
+						text-align:center;}
 aside >div ul li >span:hover{background-color:#7db9e8;}
 aside >div ul li >span:last-of-type{width:49%;margin-right:0%;}
 article{height:100%;
 	padding-top: 80px;
-	margin-left:300px;
+	margin-left:250px;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	overflow:hidden;
