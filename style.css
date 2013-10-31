@@ -66,6 +66,7 @@ aside >div ul li >span{width:49%;
 				height:100%;
 				padding:5px;
 				-moz-box-sizing:border-box;
+				box-sizing:border-box;
 				text-align:center;
 				}
 aside >div ul li:first-of-type{background-color:transparent;
